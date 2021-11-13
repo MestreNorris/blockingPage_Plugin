@@ -9,8 +9,10 @@ O repositório apresentado contempla apenas parte da ferramenta, este da qual po
 <img src="images/arquitetura.png" alt="Arquitetura do sistema" width="90%" height="90%">
 
 A ferramenta foi desenvolvida em duas partes.
-    Part1 (BlockingPage_Extensão) - Plugin desenvolvido para navegador para identificação, bloqueio, remoção e notificação de links de phising. Ela também contempla a limitação de inserção de dados sensíveis do usuário a somente páginas seguras que o usuário descrever.
-    Part 2 (BlockingPage_API) - Api para extração de links de phising em apis externas, utilizado para fornecer dados de páginas inseguras para plugin bloquear.
+
+Part1 (BlockingPage_Extensão) - Plugin desenvolvido para navegador para identificação, bloqueio, remoção e notificação de links de phising. Ela também contempla a limitação de inserção de dados sensíveis do usuário a somente páginas seguras que o usuário descrever.
+
+Part 2 (BlockingPage_API) - Api para extração de links de phising em apis externas, utilizado para fornecer dados de páginas inseguras para plugin bloquear.
 
 ## Requisitos
 * Navegador Google Chrome
