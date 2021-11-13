@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Format Linguage -->
+    <meta charset="utf-8">
+    <!-- Title -->
+    <title>BlockingPage</title>
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Header Top -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+                        <a href="home.html"><img src="../images/logo.png" alt="logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Start Status area -->
+    <div class="notika-status-area mt-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-30">
+                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
+                        <div class="website-traffic-ctn">
+                            <h2 id="qntBlacklistUser"><span class="counter">0</span></h2>
+                            <p>Links bloqueados pelo usuário</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-30">
+                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
+                        <div class="website-traffic-ctn">
+                            <h2 id="qntWhitelistUser"><span class="counter">0</span></h2>
+                            <p>Acessos liberados pelo usuário</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                        <div class="website-traffic-ctn">
+                            <h2><span class="counter" id="removeLinks">0</span></h2>
+                            <p>Total de páginas removidas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                    <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30 dk-res-mg-t-30">
+                        <div class="website-traffic-ctn">
+                            <h2><span id="lastUpdate" class="counter">0</span></h2>
+                            <p>Última atualização</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Status area-->
+
+    <!-- Search Engine Start-->
+    <div class="search-engine-area mg-b-80 mt-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="search-engine-int tb-res-mg-t-30 tb-res-ds-n dk-res-ds">
+                        <div class="contact-hd search-hd-eg">
+                            <h2>Top sites</h2>
+                            <p>Lista dos 10 sites mais acessados</p>
+                        </div>
+                        <div class="search-eg-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Site</th>
+                                        <th class="text-right">Acessos</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="topSites">
+                                    <tr class="hg-38">
+                                        <td></td>
+                                        <td class="text-right">
+                                            <h4></h4>
+                                        </td>
+                                    </tr>
+                                    <tr class="hg-38">
+                                        <td></td>
+                                        <td class="text-right">
+                                            <h4></h4>
+                                        </td>
+                                    </tr>
+                                    <tr class="hg-38">
+                                        <td></td>
+                                        <td class="text-right">
+                                            <h4></h4>
+                                        </td>
+                                    </tr>
+                                    <tr class="hg-38">
+                                        <td></td>
+                                        <td class="text-right">
+                                            <h4></h4>
+                                        </td>
+                                    </tr>
+                                    <tr class="hg-38">
+                                        <td></td>
+                                        <td class="text-right">
+                                            <h4></h4>
+                                        </td>
+                                    </tr>
+                                    <tr class="hg-38">
+                                        <td></td>
+                                        <td class="text-right">
+                                            <h4></h4>
+                                        </td>
+                                    </tr>
+                                    <tr class="hg-38">
+                                        <td></td>
+                                        <td class="text-right">
+                                            <h4></h4>
+                                        </td>
+                                    </tr>
+                                    <tr class="hg-38">
+                                        <td></td>
+                                        <td class="text-right">
+                                            <h4></h4>
+                                        </td>
+                                    </tr>
+                                    <tr class="hg-38">
+                                        <td></td>
+                                        <td class="text-right">
+                                            <h4></h4>
+                                        </td>
+                                    </tr>
+                                    <tr class="hg-38">
+                                        <td></td>
+                                        <td class="text-right">
+                                            <h4></h4>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2021. All rights reserved BlockingPage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Jquery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Script JS -->
+    <script src="../js/script.js" type="module"></script>
+    <!-- Flot JS -->
+    <script src="../js/flot/jquery.flot.js"></script>
+    <!-- Flot Resize JS -->
+    <script src="../js/flot/jquery.flot.resize.js"></script>
+    <!-- Flot Time JS -->
+    <script src="../js/flot/jquery.flot.time.js"></script>
+    <!-- Flot Active JS -->
+    <script src="../js/flot/analtic-flot-active.js"></script>
+
+</body>
+
+</html>

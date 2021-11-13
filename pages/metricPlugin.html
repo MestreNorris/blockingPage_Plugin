@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Format Linguage -->
+    <meta charset="utf-8">
+    <!-- Title -->
+    <title>BlockingPage</title>
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Header Top -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+                        <a href="home.html"><img src="../images/logo.png" alt="logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Server time start-->
+    <div class="visitor-sv-tm-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 ">
+                    <div class="visitor-sv-tm-int sm-res-mg-t-30 tb-res-mg-t-30 tb-res-ds-n dk-res-ds">
+                        <div class="contact-hd mg-bt-ant-inner">
+                            <h2>Acessos</h2>
+                            <p>Total de usuários utilizando a ferramenta</p>
+                        </div>
+                        <div class="visitor-st-ch visitor-ov-ct">
+                            <div id="visit-over-time" class="flot-chart"></div>
+                            <div class="flc-visits"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Server time End-->
+    <!-- Search Engine Start-->
+    <div class="search-engine-area mg-b-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mt-30">
+                    <div class="search-engine-int sm-res-mg-t-30 tb-res-mg-t-30 tb-res-ds-n dk-res-ds">
+                        <div class="contact-hd search-hd-eg">
+                            <h2>Desempenho</h2>
+                            <p>Tempo de resposta na execução das funções</p>
+                        </div>
+                        <div class="search-eg-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Funções</th>
+                                        <th class="text-right">Tempo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Atualização</td>
+                                        <td class="text-right">
+                                            <h4 id="updateDb">0 s</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Detecção e Remoção de links</td>
+                                        <td class="text-right">
+                                            <h4 id='blockLink'>0</h4>
+                                        </td>
+                                    </tr>
+                                    <tr class="hg-38">
+                                        <td></td>
+                                        <td class="text-right">
+                                            <h4></h4>
+                                        </td>
+                                    </tr>
+                                    <tr class="hg-38">
+                                        <td></td>
+                                        <td class="text-right">
+                                            <h4></h4>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 mt-30">
+                    <div class="search-engine-int sm-res-mg-t-30 tb-res-mg-t-30 tb-res-ds-n dk-res-ds">
+                        <div class="contact-hd search-hd-eg">
+                            <h2>Informações</h2>
+                            <p>Dados coletados da ferramenta</p>
+                        </div>
+                        <div class="search-eg-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Funções</th>
+                                        <th class="text-right">Info</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Última atualização</td>
+                                        <td class="text-right">
+                                            <h4 id="lastUpdate">0</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total de páginas removidas</td>
+                                        <td class="text-right">
+                                            <h4 id="removeLinks">0</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Links bloqueados pela API</td>
+                                        <td class="text-right">
+                                            <h4 id="qntBlacklistAPI">0</h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Acessos liberados pela API</td>
+                                        <td class="text-right">
+                                            <h4 id='qntWhitelistAPI'>0</h4>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2021. All rights reserved BlockingPage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Jquery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Script JS -->
+    <script src="../js/script.js" type="module"></script>
+    <!-- Flot JS -->
+    <script src="../js/flot/jquery.flot.js"></script>
+    <!-- Flot Resize JS -->
+    <script src="../js/flot/jquery.flot.resize.js"></script>
+    <!-- Flot Time JS -->
+    <script src="../js/flot/jquery.flot.time.js"></script>
+    <!-- Flot Active JS -->
+    <script src="../js/flot/analtic-flot-active.js"></script>
+
+</body>
+
+</html>

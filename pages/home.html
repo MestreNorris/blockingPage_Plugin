@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Format Linguage -->
+    <meta charset="utf-8">
+    <!-- Title -->
+    <title>BlockingPage</title>
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Header Top -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+                        <a href="home.html"><img src="../images/logo.png" alt="logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+    <!-- Breadcomb area Start-->
+    <div class="breadcomb-area mg-t-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="breadcomb-list">
+                        <div class="row">
+                            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                                <div class="breadcomb-wp">
+                                    <div class="breadcomb-icon">
+                                        <span class="breadcomb-icon-span">
+                                            <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="ban" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M256 8C119.034 8 8 119.033 8 256s111.034 248 248 248 248-111.034 248-248S392.967 8 256 8zm130.108 117.892c65.448 65.448 70 165.481 20.677 235.637L150.47 105.216c70.204-49.356 170.226-44.735 235.638 20.676zM125.892 386.108c-65.448-65.448-70-165.481-20.677-235.637L361.53 406.784c-70.203 49.356-170.226 44.736-235.638-20.676z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="breadcomb-ctn">
+                                        <h2>Bloqueio de links</h2>
+                                        <p>Bloqueio e remoção automática de páginas perigosas</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                                <div class="breadcomb-report">
+                                    <button type="button" class="btn" data-bs-trigger="hover" data-bs-toggle="modal"
+                                        data-bs-target="#modal_blacklist">
+                                        <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <a href="blacklist.html">
+                                        <button type="button" class="btn list">
+                                            <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modal_blacklist" tabindex="-1" name="addBlacklist"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Bloquear novo link
+                                                        malicioso</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="recipient-name"
+                                                                class="col-form-label">Link</label>
+                                                            <input type="text" class="form-control" id="linkMalicious">
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn"
+                                                                data-bs-dismiss="modal">Fechar</button>
+                                                            <button type="button" id="saveButtonMalicious"
+                                                                class="btn-save btn-primary">Adicionar</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcomb area End-->
+
+    <!-- Breadcomb area Start-->
+    <div class="breadcomb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="breadcomb-list">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                <div class="breadcomb-wp">
+                                    <div class="breadcomb-icon">
+                                        <span class="breadcomb-icon-span">
+                                            <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="shield-alt" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="breadcomb-ctn">
+                                        <h2>Liberação de acesso</h2>
+                                        <p>Liberação dos dados do usuário às páginas (Email, Senha, ...)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <div class="breadcomb-report">
+                                    <button type="button" class="btn" data-bs-trigger="hover" data-bs-toggle="modal"
+                                        data-bs-target="#modal_whitelist">
+                                        <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                                            data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 448 512">
+                                            <path fill="currentColor"
+                                                d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <a href="whitelist.html">
+                                        <button type="button" class="btn list">
+                                            <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="list" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modal_whitelist" tabindex="-1" name="addWhitelist"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Liberar acesso a
+                                                        página segura</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="mb-3">
+                                                            <label for="recipient-name"
+                                                                class="col-form-label">Link</label>
+                                                            <input type="text" class="form-control" id="linkSecure">
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn"
+                                                                data-bs-dismiss="modal">Fechar</button>
+                                                            <button type="button" id="saveButtonSecure"
+                                                                class="btn-save btn-primary">Adicionar</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcomb area End-->
+
+    <!-- Breadcomb area Start-->
+    <div class="breadcomb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="breadcomb-list">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                <div class="breadcomb-wp">
+                                    <div class="breadcomb-icon">
+                                        <span class="breadcomb-icon-span">
+                                            <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="broom" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 640 512">
+                                                <path fill="currentColor"
+                                                    d="M256.47 216.77l86.73 109.18s-16.6 102.36-76.57 150.12C206.66 523.85 0 510.19 0 510.19s3.8-23.14 11-55.43l94.62-112.17c3.97-4.7-.87-11.62-6.65-9.5l-60.4 22.09c14.44-41.66 32.72-80.04 54.6-97.47 59.97-47.76 163.3-40.94 163.3-40.94zM636.53 31.03l-19.86-25c-5.49-6.9-15.52-8.05-22.41-2.56l-232.48 177.8-34.14-42.97c-5.09-6.41-15.14-5.21-18.59 2.21l-25.33 54.55 86.73 109.18 58.8-12.45c8-1.69 11.42-11.2 6.34-17.6l-34.09-42.92 232.48-177.8c6.89-5.48 8.04-15.53 2.55-22.44z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="breadcomb-ctn">
+                                        <h2>Limpeza do navegador</h2>
+                                        <p>Limpeza automática dos dados do usuário</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <div class="breadcomb-report">
+                                    <a href="clean.html">
+                                        <button type="button" class="btn">
+                                            <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 320 512">
+                                                <path fill="currentColor"
+                                                    d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcomb area End-->
+
+    <!-- Breadcomb area Start-->
+    <div class="breadcomb-area mg-b-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="breadcomb-list">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                                <div class="breadcomb-wp">
+                                    <div class="breadcomb-icon">
+                                        <span class="breadcomb-icon-span">
+                                            <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="chart-line" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16zM464 96H345.94c-21.38 0-32.09 25.85-16.97 40.97l32.4 32.4L288 242.75l-73.37-73.37c-12.5-12.5-32.76-12.5-45.25 0l-68.69 68.69c-6.25 6.25-6.25 16.38 0 22.63l22.62 22.62c6.25 6.25 16.38 6.25 22.63 0L192 237.25l73.37 73.37c12.5 12.5 32.76 12.5 45.25 0l96-96 32.4 32.4c15.12 15.12 40.97 4.41 40.97-16.97V112c.01-8.84-7.15-16-15.99-16z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="breadcomb-ctn">
+                                        <h2>Métricas</h2>
+                                        <p>Dados estatísticos utilizados pela ferramenta</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                                <div class="breadcomb-report">
+                                    <a href="metricUser.html">
+                                        <button type="button" class="btn">
+                                            <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 448 512">
+                                                <path fill="currentColor"
+                                                    d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                    <a href="metricPlugin.html">
+                                        <button type="button" class="btn">
+                                            <svg class="svg" aria-hidden="true" focusable="false" data-prefix="fas"
+                                                data-icon="wrench" role="img" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <path fill="currentColor"
+                                                    d="M507.73 109.1c-2.24-9.03-13.54-12.09-20.12-5.51l-74.36 74.36-67.88-11.31-11.31-67.88 74.36-74.36c6.62-6.62 3.43-17.9-5.66-20.16-47.38-11.74-99.55.91-136.58 37.93-39.64 39.64-50.55 97.1-34.05 147.2L18.74 402.76c-24.99 24.99-24.99 65.51 0 90.5 24.99 24.99 65.51 24.99 90.5 0l213.21-213.21c50.12 16.71 107.47 5.68 147.37-34.22 37.07-37.07 49.7-89.32 37.91-136.73zM64 472c-13.25 0-24-10.75-24-24 0-13.26 10.75-24 24-24s24 10.74 24 24c0 13.25-10.75 24-24 24z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcomb area End-->
+
+    <!-- Footer -->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2021. All rights reserved BlockingPage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Jquery -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Script JS -->
+    <script src="../js/script.js" type="module"></script>
+
+</body>
+
+</html>
