@@ -2,12 +2,7 @@
   "name": "blockingpage",
   "version": "1.0.1",
   "description": "Bloqueio de links de phising",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Alan Pereira",
-  "license": "ISC",
   "dependencies": {
     "@popperjs/core": "^2.9.3",
     "bootstrap": "^5.1.0",
