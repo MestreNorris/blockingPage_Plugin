@@ -1,6 +1,6 @@
 {
   "name": "blockingpage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bloqueio de links de phising",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,6 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/MestreNorris/blockingPage_Plugin"
   }
 }
